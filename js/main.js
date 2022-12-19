@@ -3,10 +3,18 @@ const somar = document.querySelector("#somar");
 const subtrair = document.querySelector("#subtrair");
 const braco = document.querySelector("#braco");
 
-somar.addEventListener("click", (evento) => {
-  braco.value = parseInt(braco.value) + 1;
+const manipulandoDados = (operacao) => {
+  if (operacao == "subtrair") {
+    braco.value = parseInt(braco.value) - 1;
+  } else {
+    braco.value = parseInt(braco.value) + 1;
+  }
+};
+
+somar.addEventListener("click", () => {
+  manipulandoDados("somar");
 });
 
-subtrair.addEventListener("click", (evento) => {
-  braco.value = parseInt(braco.value) - 1;
+subtrair.addEventListener("click", () => {
+  manipulandoDados("subtrair");
 });
