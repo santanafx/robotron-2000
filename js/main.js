@@ -1,13 +1,13 @@
-const controle = document.querySelectorAll(".controle");
+const controle = document.querySelectorAll("[data-controle]");
 
 controle.forEach((elemento) => {
   elemento.addEventListener("click", (evento) => {
-    manipulandoDados(evento.target.textContent, evento.target.parentNode);
+    manipulandoDados(evento.target.dataset.controle, evento.target.parentNode);
   });
 });
 
 const manipulandoDados = (operacao, controle) => {
-  const peca = controle.querySelector(".controle-contador");
+  const peca = controle.querySelector("[data-contador]");
   if (operacao == "-") {
     peca.value = parseInt(peca.value) - 1;
   } else {
