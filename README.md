@@ -4,6 +4,8 @@
 
 # Sobre o projeto
 
+https://robotron-2000-3tvmomnu3-santanafx.vercel.app/
+
 robotron-2000 é um projeto da alura feito para pessoas que querem aprender javascript.
 
 # Linguagens de programação utilizadas
